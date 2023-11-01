@@ -1,0 +1,180 @@
+// @import "../../css-config/mixins.scss";
+
+
+// .main-header{
+//     width: 100%;
+//     padding: 0 20px;
+//   //  background-image: url('../../assets/frontpic.jpg');
+//     //background-color: #212121;
+//     color: white;
+//     border-bottom: 1px solid white ;
+//     z-index: 99;
+//     .header-content{
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         height: 80px;
+//         max-width: 1200px;
+//         margin: 0 auto;
+//         @include md{
+//             height: 80px;
+//         }
+//         .left{
+//             list-style: none;
+//             display: flex;
+//             gap: 25px;
+//             li{
+//                 font-size: 14px;
+//                 font-weight: 600;
+//                 text-transform: uppercase;
+//                 cursor: pointer;
+//             }
+//         }
+//         .center{
+//             text-transform: uppercase;
+//             font-size: 22px;
+//             font-weight: 600;
+//             @include md{
+//                 font-size: 34px;
+//                 position: absolute;
+//                 left: 50%;
+//                 transform:translateX(-50%);
+//             }
+//         }
+//         .right{
+//             .user-and-button {
+//                 display: flex;
+//                 align-items: center;
+//                 cursor: pointer;
+//                 margin: 2px;
+               
+//             }
+
+//                 button{
+//                     padding: 10px;
+//                     margin: 2px;
+//                     border: 1px solid white;
+//                     background-color: rgba(0,0,0,0.1);
+//                     color: white;
+//                     cursor: pointer;
+//                     &:hover{
+//                         background-color: rgba(0,0,0,0.3);
+//                     }
+//                 }
+                
+//         }
+//     }
+  
+// }
+
+
+
+
+
+@import "../../css-config/mixins.scss";
+
+.main-header {
+  width: 100%;
+  padding: 0 20px;
+  color: white;
+  border-bottom: 1px solid white;
+  z-index: 99;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    @include md {
+      height: 80px;
+   
+    }
+
+    .left {
+      list-style: none;
+      display: flex;
+      
+     gap: 5px;
+      @include md{
+        gap: 25px;
+      }
+
+      li {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+
+    .center {
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 600;
+
+      @include md {
+        font-size: 34px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .right {
+      .user-and-button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin: 2px;
+      }
+
+      button {
+        padding: 10px;
+        margin: 2px;
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
+  @include sm {
+    // Small screen styles
+    .header-content {
+      .left {
+        li {
+          font-size: 10px;
+          gap: 15px;
+        }
+      }
+    }
+  }
+
+  @include lg {
+    // Large screen styles
+    .header-content {
+      .left {
+        li {
+          font-size: 12px;
+          gap: 30px;
+        }
+      }
+    }
+  }
+
+  @include xl {
+    // Extra-large screen styles
+  }
+
+  @include xxl {
+    // Extra-extra-large screen styles
+  }
+}

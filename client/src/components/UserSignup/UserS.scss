@@ -1,0 +1,12 @@
+.main-signup{
+    .signup-image{
+        background-image: url('../../assets/frontpic3.jpg'); // Use the SCSS variable to reference the image path
+         background-size: 100% 100%;
+        //background-size: cover;
+         background-repeat: no-repeat;
+        
+         width: 100vw;
+         height: 100vh;
+         position: relative;
+     }
+}

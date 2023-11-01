@@ -1,0 +1,53 @@
+.main{
+    
+    height: auto;
+    padding-bottom:80px;
+    background-color:#efebe6;
+    .info{
+        
+      
+        .resort-svg{
+            height: 50px;
+            width: 60px;
+            align-items: center;
+            padding-top: 20px;
+            margin:auto;
+            justify-content: center;
+
+        }
+        .welcome-text{
+            color: #99B080;
+            margin: 2% 40%;
+            p{
+                align-items: center;
+                display: flex;
+            }
+           
+        }
+        
+       
+    }
+    .quote{
+        color: #59664b;
+        .heading{
+          display: flex;
+          justify-content: center;
+          align-items: center;   
+        }
+        p{
+          //  align-items: center;
+          padding: 10px 30px 30px 20px;
+          text-align: center;
+            margin: 0;
+        }
+    }
+    .quote2{
+        p{
+            color: #62784a;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Cedarville Cursive', cursive;
+
+        }
+    }
+}

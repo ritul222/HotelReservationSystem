@@ -1,0 +1,35 @@
+.success-main-page{
+   
+   .success-image{
+        background-image: url("../../assets/loc4.jpg");
+ 
+        background-size: 100% 100%;
+        //background-size: cover;
+         background-repeat: no-repeat;
+        
+         width: 100vw;
+         height: 100vh;
+         position: relative;
+        .success-content{
+            padding-left: 30%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            .success-main-content{
+               
+                width: 60%;
+                height: 40%;
+                background-color: white;
+                padding-top: 10%;
+                height: 80%;
+                text-align: center;
+                color:green;
+                font-weight: 1200;
+                font-size: 28px;
+
+            }
+          
+
+        }
+   }
+
+}

@@ -1,0 +1,342 @@
+@import "../../css-config/mixins.scss";
+.booking {
+    
+    height: auto;
+    display: flex;
+   
+  
+  
+  .left {
+    height: auto;
+    width: 50%;
+    background-image: url('../../assets/book.jpg');
+    background-size: cover;
+    background-position: center;
+   
+  }
+  
+  .right {
+
+    width: 100%;
+    background-color: #557A46;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5%;
+     @include md{
+         width: 50%;
+         flex-direction: column;
+
+     }
+    .close-icon{
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        cursor: pointer;
+    }
+    .heading{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .welcome{
+       margin-right: 10px;
+
+    }
+    .main-form{
+       @import "../../css-config/mixins.scss";
+.booking {
+    
+    height: 1000px;
+    display: flex;
+    
+  
+  
+  .left {
+    height: 100%;
+    width: 50%;
+    background-image: url('../../assets/book.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .right {
+
+    width: 50%;
+    background-color: #557A46;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5%;
+    
+    .close-icon{
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        cursor: pointer;
+    }
+    .heading{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .welcome{
+       margin-right: 10px;
+
+    }
+    .main-form{
+        
+        h1{
+            text-align: start;
+            font-weight: 10;
+        }
+        padding: 1x;
+        margin: 50px;
+      border: 1.5px solid rgb(234, 184, 57);
+        .bill{
+            justify-content: space-evenly;
+        }
+       
+        .check-buttons{
+           
+           
+           padding: 10px;
+           display: flex;
+           justify-content: space-evenly;
+            
+            .in{
+                 padding: 10px;
+                 label{
+                       padding: 4px;
+                     }
+                 input{
+                       padding: 10px 35px;
+                       border: 1px solid rgb(234, 184, 57);
+                      }
+               
+            }
+            .out{
+                padding: 10px;
+                label{
+                    padding: 4px;
+                }
+                input{
+                    padding: 10px 35px;
+                    border: 1px solid rgb(234, 184, 57);
+                }
+            }
+        }
+        .rooms-people{
+            flex-direction: column;
+            padding: 10px;
+            display: flex;
+            
+            justify-content: space-evenly;
+           @include md{
+            flex-direction: row;
+           }
+            .rooms{
+            //  padding: 10px;
+            // display: flex;
+            flex-direction: column;
+            // justify-content: space-evenly;
+               @include md{
+                flex-direction: column;
+               }
+            
+          
+                label{
+                    padding: 4px;
+                }
+                input{
+                    padding: 10px 35px;
+                    border: 1px solid rgb(234, 184, 57);
+                }
+                @include sm {
+                    flex-direction: row;
+                }
+            }
+            .people{
+                // padding: 10px;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-evenly;
+                label{
+                    padding: 4px;
+                }
+                input{
+                    padding: 10px 35px;
+                    border: 1px solid rgb(234, 184, 57);
+                }
+            }
+     }
+  
+        .services{
+            input{
+                cursor: pointer;
+            }
+            .head{
+                margin-top: 20px;
+                font-weight: 10;
+                padding-bottom: 10px;
+            }
+            .service-list{
+                flex-direction: column;
+                display: flex;
+            }
+            .service {
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+              }
+              label {
+                margin-right: 10px;
+              }
+              
+            .price {
+                    
+                color: #ff0000; /* Change the color to your preference */
+                 }
+        }
+        .checkout-button{
+            text-align:center;
+            padding: 10px;
+            button{
+                        padding: 8px 55px;
+                       background-color: #B0926A;
+                       color: white;
+                       border: 1px solid rgb(234, 184, 57);
+                       cursor: pointer;
+                      
+            }
+            button:hover {
+                opacity: 0.9;
+              }
+        }
+
+    }
+
+    
+}
+}
+
+
+        h1{
+            text-align: start;
+            font-weight: 10;
+        }
+        padding: 1x;
+        margin: 50px;
+      border: 1.5px solid rgb(234, 184, 57);
+        .bill{
+            justify-content: space-evenly;
+        }
+       
+        .check-buttons{
+            @media only screen and (max-width: 640px) {
+                flex-direction: column;
+                
+            }
+           
+           padding: 10px;
+           display: flex;
+           justify-content: space-evenly;
+            
+            .in{
+                 padding: 10px;
+                 label{
+                       padding: 4px;
+                     }
+                 input{
+                       padding: 10px 35px;
+                       border: 1px solid rgb(234, 184, 57);
+                      }
+               
+            }
+            .out{
+                padding: 10px;
+                label{
+                    padding: 4px;
+                }
+                input{
+                    padding: 10px 35px;
+                    border: 1px solid rgb(234, 184, 57);
+                }
+            }
+        }
+        .rooms-people{
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            .rooms{
+            
+                padding: 10px;
+                label{
+                    padding: 4px;
+                }
+                input{
+                    padding: 10px 35px;
+                    border: 1px solid rgb(234, 184, 57);
+                }
+            }
+            .people{
+                padding: 10px;
+                label{
+                    padding: 4px;
+                }
+                input{
+                    padding: 10px 35px;
+                    border: 1px solid rgb(234, 184, 57);
+                }
+            }
+        }
+  
+        .services{
+            input{
+                cursor: pointer;
+            }
+            .head{
+                margin-top: 20px;
+                font-weight: 10;
+                padding-bottom: 10px;
+            }
+            .service-list{
+                flex-direction: column;
+                display: flex;
+            }
+            .service {
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+              }
+              label {
+                margin-right: 10px;
+              }
+              
+            .price {
+                    
+                color: #ff0000; /* Change the color to your preference */
+                 }
+        }
+        .checkout-button{
+            text-align:center;
+            padding: 10px;
+            button{
+                        padding: 8px 55px;
+                       background-color: #B0926A;
+                       color: white;
+                       border: 1px solid rgb(234, 184, 57);
+                       cursor: pointer;
+                      
+            }
+            button:hover {
+                opacity: 0.9;
+              }
+        }
+
+    }
+
+    
+}
+}
+

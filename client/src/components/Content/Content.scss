@@ -1,0 +1,163 @@
+
+
+// @import "../../css-config/mixins.scss";
+// * {
+//     font-family: 'Playfair Display', serif;
+// }
+
+// .main-content {
+   
+//     height: calc(100vh - 80px);
+//     .Banner {
+     
+//         padding-top: 30px;
+//         .big-text {
+//             color: white;
+//             justify-content: center;
+//             display: flex;
+//             font-size: 30px;
+//             font-weight: 600;
+    
+//             h1 {
+//                 font-family: 'Playfair Display', serif;
+//             }
+//         }
+    
+//         .small-text {
+//             color: white;
+//             justify-content: center;
+//             display: flex;
+//             font-weight: 600;
+//             font-size: 20px;
+    
+//             p {
+//                 font-family: 'Playfair Display', serif;
+//             }
+//         }
+//     }
+//     .middle-content{
+        
+//         h1{
+//             color: white;
+//         }
+//     }
+    
+  
+    
+// }
+
+@import "../../css-config/mixins.scss";
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+.main-content {
+    height: calc(100vh - 80px);
+
+    .Banner {
+        padding-top: 30px;
+        
+        .big-text {
+            color: white;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+            font-weight: 600;
+            
+            h1 {
+                font-family: 'Playfair Display', serif;
+            }
+        }
+
+        .small-text {
+            color: white;
+            justify-content: center;
+            display: flex;
+            font-weight: 600;
+            font-size: 20px;
+            
+            p {
+                font-family: 'Playfair Display', serif;
+            }
+        }
+    }
+
+    .middle-content {
+        h1 {
+            color: white;
+        }
+    }
+
+    @include sm {
+        // Small screen styles
+        .Banner {
+            .big-text {
+                font-size: 24px;
+            }
+            .small-text {
+                font-size: 18px;
+            }
+        }
+
+        .middle-content {
+            h1 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    @include md {
+        // Medium screen styles
+        .Banner {
+            .big-text {
+                font-size: 28px;
+            }
+            .small-text {
+                font-size: 20px;
+            }
+        }
+
+        .middle-content {
+            h1 {
+                font-size: 28px;
+            }
+        }
+    }
+
+    @include lg {
+        // Large screen styles
+        .Banner {
+            .big-text {
+                font-size: 36px;
+            }
+            .small-text {
+                font-size: 24px;
+            }
+        }
+
+        .middle-content {
+            h1 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    @include xl {
+        // Extra-large screen styles
+        .Banner {
+            .big-text {
+                font-size: 40px;
+            }
+            .small-text {
+                font-size: 28px;
+            }
+        }
+
+        .middle-content {
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+

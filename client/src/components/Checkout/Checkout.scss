@@ -1,0 +1,92 @@
+
+
+.main-checkout {
+  
+  padding-top: 5%;
+  color: black;
+  background-color: rgb(236, 235, 235);
+  .close-icon{
+    top: 2%;
+   margin-left: 95%;
+   cursor: pointer;
+  }
+  .form {
+    font-weight: 600;
+    padding-bottom: 80px;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    border: 1.5px solid rgb(206, 172, 85);
+    box-shadow: 2px   rgb(109, 107, 107);;
+    .heading {
+      text-align: start;
+      padding: 25px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 5%;
+
+      .form-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        label {
+          padding: 2px;
+          text-align: left;
+          width: 30%;
+        }
+
+        input,
+        select {
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          width: 60%;
+        }
+      }
+    }
+    
+    .payment {
+      padding-bottom: 20px;
+      .heading {
+        text-align: start;
+        padding: 25px;
+      }
+
+      .form-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+       margin-left: 5%;
+       margin-right: 5%;
+
+        label {
+          padding: 2px 10px; /* Add horizontal padding here */
+          text-align: left;
+          width: 30%;
+        }
+
+        input,
+        select {
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          width: 60%;
+        }
+      }
+    }
+    button{
+      margin-left: 5%;
+      color: white;
+      background-color: rgb(51, 197, 51);
+      padding: 10px;
+      border:1px solid rgb(165, 228, 165);
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
