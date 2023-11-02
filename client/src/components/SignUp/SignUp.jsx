@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-
+import { useNavigate } from 'react-router-dom';
 const SignUp = () => {
+  const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -13,28 +14,56 @@ const SignUp = () => {
     setPasswordVisible(!passwordVisible);
   };
 
+
+
   const handleSignUp = async () => {
     if (password === confirmPassword) {
-        const response = await fetch('http://localhost:5000/userS', {
+      const response = await fetch('http://localhost:5000/userS', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ username, password }),
       });
-
+  
       if (response.status === 201) {
-        // User registered successfully, handle it as needed
+        // User registered successfully
         console.log('User registered successfully');
+        window.alert('Sign Up Successful');
+        navigate('/');
       } else {
         // Handle registration error
         console.error('Error in user registration');
       }
     } else {
-      // Passwords do not match, handle it as needed
+      // Passwords do not match
       console.error('Passwords do not match');
     }
   };
+  
+
+  // const handleSignUp = async () => {
+  //   if (password === confirmPassword) {
+  //       const response = await fetch('http://localhost:5000/userS', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({ username, password }),
+  //     });
+
+  //     if (response.status === 201) {
+  //       // User registered successfully, handle it as needed
+  //       console.log('User registered successfully');
+  //     } else {
+  //       // Handle registration error
+  //       console.error('Error in user registration');
+  //     }
+  //   } else {
+  //     // Passwords do not match, handle it as needed
+  //     console.error('Passwords do not match');
+  //   }
+  // };
 
   return (
     <div className="main-form">

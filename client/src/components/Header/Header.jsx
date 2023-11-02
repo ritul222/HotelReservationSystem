@@ -21,7 +21,7 @@ const Header = () =>{
 
   }
   const handleContactUs=()=>{
-    navigate('/contact')
+    navigate('/')
   }
   
   const navigateToBook=()=>

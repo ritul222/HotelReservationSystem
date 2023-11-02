@@ -11,7 +11,7 @@ const MiddleContent=()=>
                 <img  src={resortLogo} alt="" />
                 </div>
                 <div className="welcome-text">
-                <p>WELCOME TO COZYSTAY RESORT</p>
+                <p>WELCOME TO OBEROI RESORT</p>
               
                 </div>
                 

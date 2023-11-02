@@ -56,7 +56,8 @@ app.post("/userS", async (req, res) => {
     // Check if the username is already taken
     const existingUser = await User.findOne({ username });
     if (existingUser) {
-      return res.status(400).json({ message: 'Username is already in use' });
+    //  return res.status(400).json({ message: 'Username is already in use' });
+      alert("username already in use");
     }
 
     // Hash the password before saving it to the database
@@ -83,7 +84,8 @@ app.post("/user",async(req,res)=>{
       const{username ,password}=req.body;
       const user=await User.findOne({username});
       if(!user){
-        return res.status(401).json({message:'Invallid username or password'});
+        return res.status(401).json({message:'Invalid username or password'});
+   
       }
       const passwordMatch=await bcrypt.compare(password,user.password);
       if(passwordMatch)

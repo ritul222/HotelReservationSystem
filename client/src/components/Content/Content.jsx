@@ -7,7 +7,7 @@ const Content = () => {
         <div className="main-content">
             <div className="Banner">
                 <div className="big-text">
-                    <h1>Boutique Private Island Resort</h1>
+                    <h1>Oberoi Private Island Resort</h1>
                 </div>
                 <div className="small-text">
                     <p>The seaside haven of warmth, tranquility, and restoration</p>

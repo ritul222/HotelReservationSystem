@@ -5,48 +5,6 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-// const Login = () => {
-//     const navigate = useNavigate();
-
-//     const navigateToUserS = () => {
-     
-//       navigate('/userS');
-//     };
-//         // const[passwordVisible,setPasswordVisible]=useState(false);
-//         // const togglePasswordVisibility=()=>{
-//         //     setPasswordVisible(!passwordVisible);
-        
-    
-//     return (
-//         <div className="main-form">
-//             <span className="heading">
-//                 <h1>Login</h1>
-//             </span>
-
-//             <div className="form-content">
-//                 <label htmlFor="username" className="small-head1">
-//                     Username or email address<span className="required">*</span>
-//                 </label><br />
-//                 <span className='inputt'>
-//                     <input type="text" id="username" className="input-field" />
-//                 </span>
-//                 <br />
-//                 <label htmlFor="Password" class="small-head1">
-//                     Password<span className="required">*</span>
-//                 </label><br />
-//                 <span className='inputt'>
-//                     <input type="text" id="username" className="input-field" />
-//                 </span><br />
-//                 <button>Log in</button> <br />
-//                 <span class='lost' onClick={navigateToUserS}>New User?</span>
-
-//             </div>
-//             {/* Add more necessary fields with labels and asterisks as needed */}
-//         </div>
-//     );
-// }
-
-// export default Login;
 
 
 const Login = () => {
@@ -61,28 +19,32 @@ const Login = () => {
     const navigateToUserS = () => {
         navigate('/userS'); // Navigate to the registration page
       };
-    const handleLogin = async () => {
-      try {
-        // Make a POST request to the "/user/login" endpoint
-        const response = await axios.post('http://localhost:5000/user', {
-          username: username,
-          password: password,
-        });
-  
-        if (response.status === 200) {
-          // User login successful
-          console.log('User logged in successfully');
-          // Redirect to a different page (e.g., the home page) using React Router
-          navigate('/home');
-        } else {
-          // Handle login error (e.g., show an error message)
-          console.error('Login failed');
+
+      const handleLogin = async () => {
+        try {
+          // Make a POST request to the "/user/login" endpoint
+          const response = await axios.post('http://localhost:5000/user', {
+            username: username,
+            password: password,
+          });
+      
+          if (response.status !== 200) {
+            // Handle login error (e.g., show an error message)
+            alert("Invalid Username or Password");
+          } else {
+            // User login successful
+          
+            window.alert("Login Successful. Redirecting you to the Home page")
+            navigate('/');
+          }
+        } catch (error) {
+          // Handle any network or server errors
+          alert('Inavlid Username or password:', error);
         }
-      } catch (error) {
-        // Handle any network or server errors
-        console.error('Error during login:', error);
-      }
-    };
+      };
+      
+
+
   
     return (
       <div className="main-form">

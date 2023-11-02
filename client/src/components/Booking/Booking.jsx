@@ -78,7 +78,7 @@ return (
           <h1>Book Your Stay</h1>
         </span>
         <span className="welcome">
-          Welcome to CozyStay Pacific Hotel. Nestled in the heart of the Pacific Islands resort, on the edge of a tranquil and beautiful Garden Island, CozyStay is a haven of warmth, tranquility, and rejuvenation.
+          Welcome to Oberoi Hotel. Nestled in the heart of the Pacific Islands resort, on the edge of a tranquil and beautiful Garden Island, Oberoi is a haven of warmth, tranquility, and rejuvenation.
         </span>
         <div className="main-form">
           <h1>Reserve:</h1>
